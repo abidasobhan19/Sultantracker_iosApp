@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,9 @@
 		2C0F5FF92504DB790060033C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0F5FF72504DB790060033C /* Main.storyboard */; };
 		2C0F5FFB2504DB7B0060033C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0F5FFA2504DB7B0060033C /* Assets.xcassets */; };
 		2C0F5FFE2504DB7B0060033C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0F5FFC2504DB7B0060033C /* LaunchScreen.storyboard */; };
+		2C64A4372505005E00A82DD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C64A4362505005E00A82DD1 /* GoogleService-Info.plist */; };
+		2CE96E3825065BD700B82C73 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE96E3725065BD700B82C73 /* SignUpViewController.swift */; };
+		FCA523B30B462BB31862E2CC /* Pods_Sultan_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3FC584819D3256C1C2D460 /* Pods_Sultan_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		2C0F5FFA2504DB7B0060033C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C0F5FFD2504DB7B0060033C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C0F5FFF2504DB7B0060033C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C64A4362505005E00A82DD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2CE96E3725065BD700B82C73 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3C3FC584819D3256C1C2D460 /* Pods_Sultan_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sultan_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC54BA4F545CCABFF6C39544 /* Pods-Sultan Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sultan Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Sultan Tracker/Pods-Sultan Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF91D028D157FFD0F773F1B /* Pods-Sultan Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sultan Tracker.release.xcconfig"; path = "Target Support Files/Pods-Sultan Tracker/Pods-Sultan Tracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA523B30B462BB31862E2CC /* Pods_Sultan_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0D730C393E017D3C878718 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C3FC584819D3256C1C2D460 /* Pods_Sultan_Tracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2C0F5FE72504DB790060033C = {
 			isa = PBXGroup;
 			children = (
+				2C64A4362505005E00A82DD1 /* GoogleService-Info.plist */,
 				2C0F5FF22504DB790060033C /* Sultan Tracker */,
 				2C0F5FF12504DB790060033C /* Products */,
+				D5FD9128667C24E8CDFBD413 /* Pods */,
+				0A0D730C393E017D3C878718 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +76,22 @@
 			children = (
 				2C0F5FF32504DB790060033C /* AppDelegate.swift */,
 				2C0F5FF52504DB790060033C /* ViewController.swift */,
+				2CE96E3725065BD700B82C73 /* SignUpViewController.swift */,
 				2C0F5FF72504DB790060033C /* Main.storyboard */,
 				2C0F5FFA2504DB7B0060033C /* Assets.xcassets */,
 				2C0F5FFC2504DB7B0060033C /* LaunchScreen.storyboard */,
 				2C0F5FFF2504DB7B0060033C /* Info.plist */,
 			);
 			path = "Sultan Tracker";
+			sourceTree = "<group>";
+		};
+		D5FD9128667C24E8CDFBD413 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC54BA4F545CCABFF6C39544 /* Pods-Sultan Tracker.debug.xcconfig */,
+				EFF91D028D157FFD0F773F1B /* Pods-Sultan Tracker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C0F60022504DB7B0060033C /* Build configuration list for PBXNativeTarget "Sultan Tracker" */;
 			buildPhases = (
+				B9BC7251AEE73208F2CA2D48 /* [CP] Check Pods Manifest.lock */,
 				2C0F5FEC2504DB790060033C /* Sources */,
 				2C0F5FED2504DB790060033C /* Frameworks */,
 				2C0F5FEE2504DB790060033C /* Resources */,
+				7AD75260F7AAA9DA080EEBE4 /* [CP] Embed Pods Frameworks */,
+				226BB11772B5DF1DF3180045 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0F5FFE2504DB7B0060033C /* LaunchScreen.storyboard in Resources */,
+				2C64A4372505005E00A82DD1 /* GoogleService-Info.plist in Resources */,
 				2C0F5FFB2504DB7B0060033C /* Assets.xcassets in Resources */,
 				2C0F5FF92504DB790060033C /* Main.storyboard in Resources */,
 			);
@@ -130,11 +164,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		226BB11772B5DF1DF3180045 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sultan Tracker/Pods-Sultan Tracker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sultan Tracker/Pods-Sultan Tracker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sultan Tracker/Pods-Sultan Tracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD75260F7AAA9DA080EEBE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sultan Tracker/Pods-Sultan Tracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sultan Tracker/Pods-Sultan Tracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sultan Tracker/Pods-Sultan Tracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9BC7251AEE73208F2CA2D48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sultan Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C0F5FEC2504DB790060033C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE96E3825065BD700B82C73 /* SignUpViewController.swift in Sources */,
 				2C0F5FF62504DB790060033C /* ViewController.swift in Sources */,
 				2C0F5FF42504DB790060033C /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +374,7 @@
 		};
 		2C0F60032504DB7B0060033C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC54BA4F545CCABFF6C39544 /* Pods-Sultan Tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +393,7 @@
 		};
 		2C0F60042504DB7B0060033C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF91D028D157FFD0F773F1B /* Pods-Sultan Tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
