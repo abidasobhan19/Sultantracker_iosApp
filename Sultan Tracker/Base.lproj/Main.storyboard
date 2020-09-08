@@ -35,7 +35,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login" backgroundImage="Path 2486"/>
                                 <connections>
-                                    <action selector="SignIN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6by-Ul-gHd"/>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1i-sC-FuP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forget Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tB-ZP-tkE">
@@ -85,10 +85,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="e0M-Sd-VVD"/>
+                    <connections>
+                        <outlet property="txtemail" destination="VmJ-cl-Lhr" id="2JO-FA-5Ab"/>
+                        <outlet property="txtpassword" destination="04F-bn-IGN" id="odO-IA-Ir7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.79999999999995" y="47.226386806596707"/>
+            <point key="canvasLocation" x="743" y="-62"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="UJs-Is-UfV">
@@ -163,6 +167,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbo-Zc-7F3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1668" y="47"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tnu-yq-y70">
+            <objects>
+                <viewController id="dhv-lr-TS3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0w8-di-BH2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKw-nN-Rb1">
+                                <rect key="frame" x="163" y="138" width="72" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wqa-nC-ewh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmi-TB-aCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iKN-60-9gN">

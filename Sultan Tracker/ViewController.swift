@@ -15,6 +15,11 @@ import Firebase
 class ViewController: UIViewController {
     
   
+    
+    @IBOutlet weak var txtemail: UITextField!
+    
+    @IBOutlet weak var txtpassword: UITextField!
+    
     @IBOutlet weak var signInButton: GIDSignInButton!
     
     override func viewDidLoad() {
@@ -34,6 +39,9 @@ class ViewController: UIViewController {
         
 
     }
+    
+    
+    
     @IBAction func SignUp(_ sender: Any) {
         let story = UIStoryboard(name: "Main", bundle: nil)
         let controller = story.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
@@ -42,12 +50,35 @@ class ViewController: UIViewController {
         print("button pressed")
     }
     
-   
     
-   
+    @IBAction func login(_ sender: Any) {
+        
+        login(email: txtemail.text!, password: txtpassword.text!)
+        
+    }
+    
+    
+    func login(email:String, password:String){
+        Auth.auth().signIn(withEmail: email, password: password) {  User , error in
+            if error == nil{
+               
+                print("user signed in")
+            
+            }else {(error?._code == AuthErrorCode.userNotFound.rawValue)
+                    print(error)
+                
+            }
+            // ...
+        }
+        
+            
+            }
+          
+        }
+
     
  
    
     
-}
+
 
