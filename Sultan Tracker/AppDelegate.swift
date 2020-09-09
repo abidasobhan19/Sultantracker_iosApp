@@ -20,6 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,GIDSignInDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
+        let authListner = Auth.auth().addStateDidChangeListener{
+            auth, user in
+            
+            if user != nil{
+               print("user is not nill")
+                let story = UIStoryboard(name: "Main", bundle: nil)
+                let controller = story.instantiateViewController(withIdentifier: "singInViewController") as! singInViewController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+            }else {
+                print("user nil")
+                let story = UIStoryboard(name: "Main", bundle: nil)
+                let controller = story.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                self.window?.rootViewController = controller
+                self.window?.makeKeyAndVisible()
+            }
+        }
      
         // Override point for customization after application launch.
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID

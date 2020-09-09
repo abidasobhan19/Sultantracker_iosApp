@@ -13,7 +13,7 @@ import Alamofire
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,UITextFieldDelegate{
     
   
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-   
+   txtpassword.delegate = self
         
         
         
@@ -91,7 +91,10 @@ class ViewController: UIViewController {
         
             
             }
-          
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtpassword.resignFirstResponder()
+        return true
+    }
         }
 
     

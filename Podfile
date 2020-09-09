@@ -11,8 +11,7 @@ target 'Sultan Tracker' do
 pod 'GoogleSignIn', '~> 5.0'
 pod 'AppAuth','~> 1.2.0'
 pod 'Firebase/Auth'
-pod 'Toast-Swift', '~> 4.0.1'
-
+pod 'Alamofire', '~> 4.5'
 
 
 end

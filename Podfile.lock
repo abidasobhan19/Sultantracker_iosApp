@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.9.1)
   - AppAuth (1.2.0):
     - AppAuth/Core (= 1.2.0)
     - AppAuth/ExternalUserAgent (= 1.2.0)
@@ -58,16 +59,16 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
-  - Toast-Swift (4.0.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.5)
   - AppAuth (~> 1.2.0)
   - Firebase/Auth
   - GoogleSignIn (~> 5.0)
-  - Toast-Swift (~> 4.0.1)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - AppAuth
     - Firebase
     - FirebaseAuth
@@ -80,9 +81,9 @@ SPEC REPOS:
     - GTMSessionFetcher
     - nanopb
     - PromisesObjC
-    - Toast-Swift
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AppAuth: bce82c76043657c99d91e7882e8a9e1a93650cd4
   Firebase: 658370fa0181826a74b7cfca8d68c5856ca749ae
   FirebaseAuth: 09f086fae98643f1ef235674cf3ae171ce26f5ba
@@ -95,8 +96,7 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
-  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
 
-PODFILE CHECKSUM: af85e85f26c34205651e6774355f9bbd12e7ef5f
+PODFILE CHECKSUM: 165a8d4f04da628995ba0b27ef78ea1de2fd8a87
 
 COCOAPODS: 1.9.3

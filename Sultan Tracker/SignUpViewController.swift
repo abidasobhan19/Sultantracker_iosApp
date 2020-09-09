@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtpassword: UITextField!
@@ -21,6 +21,7 @@ class SignUpViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        txtpassword.delegate = self
         txtEmail.becomeFirstResponder()
     }
 
